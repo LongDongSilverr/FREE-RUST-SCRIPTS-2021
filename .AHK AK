@@ -1,0 +1,230 @@
+#NoEn
+SendMode Input
+ 
+~F8::Suspend
+~End::ExitApp
+~F11::Reload
+ 
+LCtrl & ~LButton::
+Loop 8
+
+   If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-2,3)
+    }
+    else
+    break
+Loop 8
+
+   If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(1,3)
+    }
+    else
+    break
+Loop 8
+
+   If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-3,3)
+    }
+    else
+    break
+Loop 8
+
+   If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-3,3)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-1.5,2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(1,3)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(2,1.5)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(1.5,1)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(2,1)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(3,1)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(3,-1)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(3,1)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(1,2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(0,2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-1.5,2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-1.5,3)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-2,1.2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-2,2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-2,2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-4,1.2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-3,1.5)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-3,2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-1,-1)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-1,0.5)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-1,1.5)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(-1,2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(1.5,2)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(1.5,3)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(3.5,1)
+    }
+    else
+    break
+Loop 8
+	If GetKeyState("LButton", "LCtrl") {
+        Sleep, 6
+        mouseXY(5,2)
+    }
+    else
+    break
+
+		
+Return
+
+mouseXY(x,y)
+{
+DllCall("mouse_event",int,1,int,x,int,y,uint,0,uint,0)
+}
